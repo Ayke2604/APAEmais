@@ -162,3 +162,33 @@
  {
    transform: none;
  }
+ /*------------------centro--------------------------*/
+ .intro{
+   width: 500px;
+   height: 300px;
+   margin-left: 4%;
+   
+   position: relative;
+   top: -50px;
+ }
+ .titulo{
+   font-family: Impact, fantasy;
+   font-size: 50px;
+   color: rgb(32, 44, 54);
+ }
+  
+ .texto{
+   font-family: Century Gothic;
+   font-size: 20px;
+ }
+
+ .logo{
+  position: relative;
+  top: 0;
+  float: right;
+  
+  width: 70px; 
+  margin: 10px;
+  
+  
+ }
