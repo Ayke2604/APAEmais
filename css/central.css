@@ -13,8 +13,8 @@ body {
   position: relative;
   margin-top: 3%;
   z-index: 0;
+  
   margin-right: 3%;
-
   float: left;
   width: 60%;
 
@@ -35,7 +35,7 @@ body {
   text-align: left;
   letter-spacing: 1px;
   word-spacing: 4px;
-
+  
 }
 
 
@@ -147,8 +147,8 @@ nav ul li a:hover {
     margin-left: 8%;
     position: relative;
     margin-top: 3%;
-    margin-right: 9%;
-    width: 88%;
+    margin-right: 10%;
+    width: 82%;
 
   }
 
@@ -256,16 +256,18 @@ nav ul li a:hover {
 .elemento {
   width: 300px;
   height: auto;
-  background-color: #d3c890;
+  background-color: #c59258;
   border-collapse: separate;
   text-align: center;
   border: 10px;
-  line-height: 10px;
+  line-height: auto;
   border-radius: 20px;
   cursor: pointer;
   font-family: Impact, fantasy;
   color: #eaecdf;
-  font-size: 20px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  
 }
 
 /*--------------------rodape-------------------*/
@@ -273,4 +275,5 @@ footer {
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  
 }
