@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS blog; 
+
 CREATE DATABASE blog;
 USE blog;
 
@@ -7,7 +9,7 @@ CREATE TABLE usuario(
     email varchar(255) not null,
     senha varchar(60) not null,
     data_criacao datetime not null default current_timestamp,
-    ativo tinyint not null default '0',
+    ativo tinyint not null default '1',
     adm tinyint not null default '0',
     primary key(id)
 );

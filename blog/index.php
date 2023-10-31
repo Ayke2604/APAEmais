@@ -24,6 +24,10 @@
             <li class="nav-item">
                 <a href="login_formulario.php">Logar</a>
             </li>
+           
+            <li class="nav-item">
+                <a class="nav-link" href="post_formulario.php">Incluir Post</a>
+            </li>
       </ul>
     </nav>
     <div class="clearfix"></div>
@@ -138,6 +142,9 @@
     <footer><a href="https://github.com/Ayke2604">
       <p>Git - Ayke2604</p>
     </a></footer>
-    <script src="lib/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    
+
+
+    
     </body>
 </html>

@@ -49,7 +49,7 @@ switch($acao){
         case 'login':
             $criterio = [
                 ['email', '=', $email],
-                ['AND', 'ativo', '=', 0]
+                ['AND', 'ativo', '=', 1]
                 ];
 
         $retorno = buscar(

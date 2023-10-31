@@ -27,7 +27,7 @@ function update_teste($id, $nome, $email): void{
 }
 
 
-insert_teste ('Guilherme', 'guilherme.cintra@ifsp.edu.br', '123456');
+insert_teste ('Caique', 'caque@gmail.com', '123');
 buscar_teste();
 update_teste(3, 'murilo', 'silva@gmail.com');
 buscar_teste();
