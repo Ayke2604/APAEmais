@@ -4,7 +4,7 @@ require_once '../core/conexao_mysql.php';
 require_once '../core/sql.php';
 require_once '../core/mysql.php';
 
-insert_teste ('BlaBla', 'Qual a diferença entre um corvo e uma escrivaninha?', '1',date('Y-m-d H:i:s'));
+insert_teste ('menuuumenuuu', 'Qual a diferença entre um corvo e uma escrivaninha?', '1',date('Y-m-d H:i:s'));
 //buscar_teste();
 // update_teste(38, 'murilo', 'silva@gmail.com');
 // buscar_teste();

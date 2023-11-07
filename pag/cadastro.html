@@ -13,7 +13,7 @@
 <body>
     <header>
         <a href="#"><img src="../img/Logo2.png" class="logo"></a>
-        <div class="menu-toggle"></div>
+        <div class="menuuu"></div>
         <nav>
           <ul>
             <li><a href="../index.html" class="active">Início</a></li>
@@ -31,8 +31,8 @@
         crossorigin="anonymous"></script>
       <script type="text/javascript">
         $(document).ready(function () {
-          $('.menu-toggle').click(function () {
-            $('.menu-toggle').toggleClass('active')
+          $('.menuuu').click(function () {
+            $('.menuuu').toggleClass('active')
             $('nav').toggleClass('active')
           })
         })

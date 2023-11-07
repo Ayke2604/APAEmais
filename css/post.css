@@ -26,6 +26,7 @@ body {
     color: rgb(32, 44, 54);
     z-index: 0;
     letter-spacing: 2px;
+    align-items: center;
     text-align: center;
   }
   
@@ -37,7 +38,8 @@ body {
     text-align: left;
     letter-spacing: 1px;
     word-spacing: 4px;
-    
+    align-items: center;
+    text-align: center;
   }
   
   
@@ -283,19 +285,69 @@ body {
     justify-content: center;
     
   }
+  
 
- /*---------------------buscador---------------------*/
- .Buscador {
-    background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
-    background-size: 24px;
-    width: 500px;
-    border: transparent;
-    border-bottom: solid 1px #ccc;
-    padding: 10px 10px 10px 30px;
-    outline: none;
+  /*---------------------post-------------------------*/
+  input[type=text] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(226, 203, 102);
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
   }
 
-  
-  
-  
-  
+
+  textarea[type=text]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(226, 203, 102);
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  input[type=date]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(226, 203, 102);
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  input[type=time]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(226, 203, 102);
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  button[type=submit]{
+    padding: 12px 20px;
+    background-color: #c59258;
+    margin: 8px 0;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }

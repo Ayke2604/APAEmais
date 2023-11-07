@@ -209,7 +209,7 @@ body {
 	margin: 10px 0;
 	padding: 10px 20px;
 	text-decoration: none;
-	color: black;
+	color: menuuuck;
   }
   
   nav ul li a.active,
@@ -267,7 +267,7 @@ body {
 	  width: 85%;
 	}
   
-	.menu-toggle {
+	.menuuu {
 	  display: block;
 	  width: 40px;
 	  height: 40px;
@@ -279,7 +279,7 @@ body {
 	  color: #d7d7b8;
 	}
   
-	.menu-toggle:before {
+	.menuuu:before {
 	  content: '\f0c9';
 	  font-family: fontawesome;
 	  line-height: 40px;
@@ -307,7 +307,7 @@ body {
 	  display: none;
 	}
   
-	.menu-toggle.active:before {
+	.menuuu.active:before {
 	  content: '\f00d';
 	}
   
