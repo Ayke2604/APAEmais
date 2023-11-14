@@ -10,51 +10,40 @@
 
     </head>
     <body>
-    <header>
-    <a href="#"><img src="../img/Logo2.png" class="logo"></a>
-    <div class="menuuu"></div>
-    <nav>
-      <ul>
-        <li><a href="../index.html" class="active">Início</a></li>
-        <li><a href="#">Sobre nós</a></li>
-        
-        <li class="nav-item">
-                <a  href="usuario_formulario.php">Cadastre-se</a>
-            </li>
-            <li class="nav-item">
-                <a href="login_formulario.php">Logar</a>
-            </li>
-           
-            <li class="nav-item">
-                <a class="nav-link" href="post_formulario.php">Incluir Post</a>
-            </li>
-      </ul>
-    </nav>
-    <div class="clearfix"></div>
-  </header>
-
-
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('.menuuu').click(function () {
-        $('.menuuu').toggleClass('active')
-        $('nav').toggleClass('active')
-      })
-    })
-  </script>
-
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+    <div class="col-md-12">
                     <!-- Topo //-->
                     <?php
                         include 'includes/topo.php';
                     ?>
                 </div>
+   
+
+
+                <div class="col-md-12">
+                    <!-- Topo //-->
+                    <?php
+                        include 'includes/menu.php';
+                    ?>
+                </div>
+
+
+
+
+
+
+
+
+
+<div class="col-md-12">
+                    <!-- Topo //-->
+                    <?php
+                        include 'includes/topo1.php';
+                    ?>
+                </div>
+
+        <div class="container">
+            <div class="row">
+                
             </div>
             <div class="row" style="min-height: 500px;">
                 <div class="col-md-12">
@@ -130,6 +119,9 @@
                         <?php endif;?>
                         <?php endforeach; ?>
                     </div>
+
+                            
+
                 </div>
             </div>
         </div>
@@ -139,10 +131,13 @@
             </div>
         </div>
     </div>
-    <footer><a href="https://github.com/Ayke2604">
-      <p>Git - Ayke2604</p>
-    </a></footer>
     
+    <div class="col-md-12">
+                    <!-- Topo //-->
+                    <?php
+                        include 'includes/rodape.php';
+                    ?>
+                </div>
 
 
     

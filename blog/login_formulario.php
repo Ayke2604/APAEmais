@@ -13,35 +13,16 @@
 
 <body>
 
-
-
-
-  <header>
-    <a href="#"><img src="../img/Logo2.png" class="logo"></a>
-    <div class="menuuu"></div>
-    <nav>
-      <ul>
-        <li><a href="../index.html" class="active">Início</a></li>
-        <li><a href="#">Sobre nós</a></li>
-        <li><a href="#">Contatos</a></li>
-        <li><a href="#">Logar</a></li>
-        <li><a href="cadastro.html">Cadastrar</a></li>
-      </ul>
-    </nav>
-    <div class="clearfix"></div>
-  </header>
-
-
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('.menuuu').click(function () {
-        $('.menuuu').toggleClass('active')
-        $('nav').toggleClass('active')
-      })
-    })
-  </script>
+<?php
+                        include 'includes/topo.php';
+                    ?>
+                </div>
+<div class="col-md-12">
+                    <!-- Topo //-->
+                    <?php
+                        include 'includes/menu.php';
+                    ?>
+                </div>
 
   <br>
   <br>

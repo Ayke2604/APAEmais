@@ -1,6 +1,3 @@
-<div class="card">
-    <div class="card-body text-center">
-        <p>Copyright - <a href='http://www.ifsp.edu.br'
-        target='_menuuunk'>IFSP</a></p>
-    </div>
-</div>
+<footer><a href="https://github.com/Ayke2604">
+      <p>Git - Ayke2604</p>
+    </a></footer>
