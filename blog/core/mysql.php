@@ -12,7 +12,7 @@ function insere (string $entidade, array $dados) : bool
     }
 
     $instrucao = insert($entidade, $coringa); //vai inserir os coringas
-    
+   
     $conexao = conecta();
 
     $stmt = mysqli_prepare ($conexao, $instrucao);
@@ -163,6 +163,7 @@ string $ordem = null) : array
     }
 
     $instrucao = select($entidade, $campos, $coringa_criterio, $ordem);
+
     $conexao = conecta();
 
     $stmt = mysqli_prepare($conexao, $instrucao);

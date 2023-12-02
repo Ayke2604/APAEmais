@@ -19,14 +19,16 @@
     require_once 'core/conexao_mysql.php';
     require_once 'core/sql.php';
     require_once 'core/mysql.php';
-
+  
     foreach($_GET as $indice => $dado) {
         $$indice = limparDados($dado);
     }
-
+    $id_post = $post;
+    echo $id_post;
     $posts = buscar(
         'post',
         [
+            'id',
             'titulo',
             'data_postagem',
             'texto',
@@ -41,6 +43,24 @@
     $post = $posts[0];
     $data_post = date_create($post['data_postagem']);
     $data_post = date_format($data_post, 'd/m/Y H:i:s');
+
+    $respostas = buscar(
+        'resposta',
+        [
+            'id',
+            'texto',
+            'titulo',
+            'data_criacao',
+            '(select nome
+                from usuario
+                where usuario_id = resposta.usuario_id) as nome'
+        ],
+        [
+            ['fk_id_post', '=', $post["id"]]
+        ]
+    );
+    
+   
 
 ?>
 
@@ -66,10 +86,29 @@
                         <div class="list-group2">
                            <p> <?php echo html_entity_decode($post['texto']) ?></p>
                         </div>
+                        <h3 class="resposta">Comentários:</h3>
                     </div>
                 </div>
             </div>
+            <?php
+                foreach($respostas as $resposta):
+                            $data = date_create($resposta['data_criacao']); //cria a data
+                            $data = date_format($data, 'd/m/Y H:i:s'); // formata a data
+                            
+            ?>
+                        <a class="list-group-item list-group-item-action"> <!--Cria uma href com base em ID-->
+                            [<?php echo $resposta['nome']?>]
+                            <strong><?php echo $resposta ['titulo']?></strong>
+                            [<?php echo $resposta['texto']?>]
+                            <span class="badge badge-dark"><?php echo $data?></span>
+                        </a>
+                
+                        <?php endforeach; ?>
             <button class="botao"><a href="index.php">Voltar</a></button>
+           
+        
+          
+            <button class="botao2"><a href="post_resposta.php?post=<?php echo $post['id']; ?>">Responder</a></button>
             <div class="row">
                 <div class="col-md-12">
                     <?php 
@@ -77,6 +116,8 @@
                     ?>
                     
                 </div>
+
+              
             </div>
         </div>
        

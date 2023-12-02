@@ -1,0 +1,353 @@
+body {
+    background: #f8f8ec;
+  }
+  
+  /*------------------centro--------------------------*/
+  .centro {
+    display: flex;
+  }
+  
+  .intro {
+  
+    margin-left: 8%;
+    position: relative;
+    margin-top: 3%;
+    z-index: 0;
+    
+    margin-right: 3%;
+    float: left;
+    width: 60%;
+  
+  }
+  
+  .titulo {
+    font-family: Impact, fantasy;
+    font-size: 50px;
+    color: rgb(32, 44, 54);
+    z-index: 0;
+    letter-spacing: 2px;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+  .texto {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    z-index: 0;
+    text-align: left;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .img {
+  
+    width: 38%;
+    height: 38%;
+    display: flex;
+    float: right;
+    margin-top: 17%;
+  
+    align-items: center;
+  }
+  
+  .cridown {
+    border-radius: 5%;
+    width: 100%;
+  
+  }
+  
+  /*-----------------------nav--------------------*/
+  
+  body {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  header {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 5px;
+    background: whitesmoke;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(39, 70, 85, 0.5);
+  }
+  
+  .logo {
+    width: 70px;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+  
+  }
+  
+  .logo:hover {
+    background: #d7d7b8;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  nav ul li a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: menuuuck;
+  }
+  
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: #d7d7b8;
+    color: white;
+    transition: 0.5s;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  
+  @media (max-width:1200px) {
+    header {
+      margin: 20px;
+    }
+  
+    .centro {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+    }
+  
+  
+    .intro {
+  
+      margin-left: 8%;
+      position: relative;
+      margin-top: 3%;
+      margin-right: 10%;
+      width: 82%;
+  
+    }
+  
+    .texto {
+      width: 100%;
+    }
+  
+    .img {
+      margin-top: 3%;
+      margin-right: 25%;
+      margin-left: 25%;
+      width: 50%;
+    }
+  }
+  
+  
+  
+  
+  @media (max-width:768px) {
+    .img {
+      margin-top: 3%;
+      margin-right: 3%;
+      margin-left: 8%;
+      width: 85%;
+    }
+  
+    .menuuu {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      float: right;
+      cursor: pointer;
+      text-align: center;
+      font-size: 30px;
+      color: #d7d7b8;
+    }
+  
+    .menuuu:before {
+      content: '\f0c9';
+      font-family: fontawesome;
+      line-height: 40px;
+    }
+  
+    .per2 {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .per {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  
+  
+    }
+  
+    .elemento {
+      margin-top: 10%;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    .menuuu.active:before {
+      content: '\f00d';
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    nav.active {
+      display: block;
+      width: 100%;
+    }
+  
+    nav.active ul {
+      display: block;
+    }
+  
+  }
+  
+  /*-----------------------links-------------------------*/
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /*----------------tabela---------------------*/
+  .per {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 4%;
+  }
+  
+  .per2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 4%;
+  }
+  
+  .elemento {
+    width: 300px;
+    height: auto;
+    background-color: #c59258;
+    border-collapse: separate;
+    text-align: center;
+    border: 10px;
+    line-height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: Impact, fantasy;
+    color: #eaecdf;
+    font-size: 17px;
+    letter-spacing: 2px;
+    
+  }
+  
+  /*--------------------rodape-------------------*/
+  footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+
+  /*---------------------post-------------------------*/
+  input[type=text] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(226, 203, 102);
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+
+  textarea[type=text]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(226, 203, 102);
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  input[type=date]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(226, 203, 102);
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  input[type=time]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(226, 203, 102);
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  button[type=submit]{
+    padding: 12px 20px;
+    background-color: #c59258;
+    margin: 8px 0;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }

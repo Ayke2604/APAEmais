@@ -26,6 +26,17 @@ create table post(
     constraint fk_post_usuario foreign key(usuario_id) references usuario(id)
 );
 
+create table resposta(
+	id int primary key auto_increment,
+    titulo varchar(255) not null,
+    texto text not null,
+    usuario_id int not null,
+    data_criacao datetime not null default current_timestamp,
+    -- respostarespostadata_postagem datetime not null,
+    fk_id_post int not null,
+    constraint fk_id foreign key(fk_id_post) references post(id)
+);
+
 create table avaliacao (
     id int not null auto_increment,
     nota int not null,
