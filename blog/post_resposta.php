@@ -10,13 +10,18 @@
 
     </head>
     <body>
+    <h1 class="titulo">Resposta</h1>
+    <h2 class="texto">Escreva seu comentário</h2>
         <form action="core/post_resposta_repositorio.php" method="post">
             <input type="hidden" name="acao" value="insert">
             <input type="hidden" name="id_post"
                                value="<?php echo $_GET["post"] ?? '' ?>"> 
-            <input type="text" name="titulo" id="">
-            <input type="text" name="texto" id="">
-            <input type="submit" value="enviar">
+            <input type="text" name="titulo" id="" maxlength="75" placeholder="Titúlo (75 - Max. Caracteres)">
+            <input type="text" name="texto" id="" maxlength="80" placeholder="Texto (80 Max. Caracteres)">
+            <div class="texto-right">  
+                           <a href='post_detalhe.php'> <button class="active"
+                                    type="submit" >Salvar</button></a>
+                        </div>
         </form>
     </body>
 

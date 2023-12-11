@@ -7,6 +7,11 @@ body {
     display: flex;
   }
   
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
   .intro {
   
     margin-left: 8%;

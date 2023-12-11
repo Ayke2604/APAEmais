@@ -15,7 +15,6 @@ foreach($_GET as $indice => $dado) {
 }
 
 
-
 switch($acao){
     case 'insert':
         $trimmed = trim($texto);
@@ -39,4 +38,4 @@ switch($acao){
 
 }
 
-//header('Location: ../index.php');
+header('Location: ../index.php');
